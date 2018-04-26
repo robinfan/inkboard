@@ -1,2 +1,1 @@
-Sample For WPF inkcanvas]\
-saf
+Sample For WPF inkcanvas
