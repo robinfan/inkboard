@@ -1,0 +1,24 @@
+﻿<Window x:Class="InkBoard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InkBoard"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Height="30" Orientation="Horizontal" Background="#FF3285E8" Name="STP_ToolBar">
+            <Button Margin="2" Name="Btn_nSelect" Click="Btn_nSelect_Click">选择</Button>
+            <Button Margin="2" Name="Btn_Pen" Click="Btn_Pen_Click">书写</Button>
+            <Button Margin="2" Name="Btn_PenGesture" Click="Btn_PenGesture_Click">书写+手势</Button>
+            <Button  Margin="2" Name="Btn_Earse" Click="Btn_Earse_Click">点擦除</Button>
+            <Button  Margin="2" Name="Btn_ClearNote" Click="Btn_ClearNote_Click">对象擦除</Button>
+            <Label>粗细</Label>
+            <ComboBox Width="75" Name="Cmb_penWidth" SelectionChanged="Cmb_penWidth_SelectionChanged" />
+        </StackPanel>
+        <InkCanvas EditingMode="Ink" Name="IB_Canvas">
+   
+
+        </InkCanvas>
+    </DockPanel>
+</Window>
